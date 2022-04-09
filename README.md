@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-(ELK-STACK-PROJECT/Diagrams/ELK.jpg)
+![Screenshot](ELK.jpg)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -33,8 +33,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Metricbeat collects system metrics such as uptime 
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
-
+ 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.4   | Linux            |
@@ -75,7 +74,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![Screenshot](docker-ps.jpg)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -102,9 +101,5 @@ SSH into the control node and follow the steps below:
 - In each playbook run, a host group must be specified. This will be either ELK or Webservers. This will allow us to run playbooks on a specified machine while avoiding others.
 - Run the playbook, and navigate to http://[VM.IP]:5601/app/kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+
